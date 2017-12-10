@@ -1,12 +1,13 @@
 {
-  "name": "mongo",
+  "name": "mini-loginschema",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mini app for user accounts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
-  "author": "",
+  "author": "djorborn",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -16,5 +17,18 @@
     "mongoose": "^4.13.6",
     "pug": "^2.0.0-rc.4",
     "redis": "^2.8.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djorborn/mini-LoginSchema.git"
+  },
+  "keywords": [
+    "login",
+    "user",
+    "accounts",
+    "mongodb",
+    "schema",
+    "mongoose"
+  ]
 }
