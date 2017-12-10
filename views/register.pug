@@ -1,0 +1,46 @@
+extends layout
+block register
+  include header
+  
+  form(class="container white z-depth-2" style="padding-top: 160px")
+    div(class="row" style="padding: 20px")
+      div(class="col m4 s12 input-field")
+        label(for="username") Username
+        input(type="text" name="username" placeholder="Username" required="true" class="validate")
+      div(class="col m4 s12 input-field")
+        label(for="password") Password
+        input(type="password" name="password" placeholder="Passwoes" required="true" class="validate")
+      div(class="col m4 s12 input-field")
+        label(for="email") Email
+        input(type="email" name="email" placeholder="Email" required="true" class="validate")
+      div(class="row")
+        div(class="col m5 s12 input-field")
+          input(type="text" name="first_name" placeholder="First Name" class="validate")
+          label(for="first_name") First Name
+        div(class="col m5 s12 input-field")
+          label(for="last_name") Last Name
+          input(type="text" name="last_name" placeholder="Last Name" class="validate")
+        div(class="col m2 s12 input-field")
+          label Age
+          input(type="text" name="age" placeholder="Age" class="validate")
+      div(class="row")
+        div(class="col m6 s12 input-field")
+          label(for="address") Address
+          input(type="text" name="address" placeholder="Address" class="validate")
+        div(class="col m3 s12 input-field")
+          label(for="city") City
+          input(type="text" name="city" placeholder="City" class="validate")
+        div(class="col m1 s4 input-field")
+          label(for="state") State
+          input(type="text" name="state" placeholder="State" class="validate")
+          span(class="grey-text") ex.MD
+        div(class="col m2 s8 input-field")
+          label(for="zip") Zip
+          input(type="text" name="zip" placeholder="Zip" class="validate")
+      div(class="row")
+        div(class="col m2 s12")
+          button(class="btn white grey-text" style="width: 100%") Login
+        div(class="col m7 s0")
+        
+        div(class="col m3 s12")
+          button(class="btn " style="width: 100%") Register
