@@ -1,5 +1,5 @@
 ##### Mini App
-# MongoSchema
+# LoginSchema
 > Simple Local User Authorization and Registration
 
 For this mini app, I want to use Mongoose to create a collection, insert, delete, find and update documents in it. This is my first go with mongoose, I have a little experience with using `mongodb` module though.
