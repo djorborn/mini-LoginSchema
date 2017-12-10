@@ -2,45 +2,45 @@ extends layout
 block register
   include header
   
-  form(class="container white z-depth-2" style="padding-top: 160px")
-    div(class="row" style="padding: 20px")
-      div(class="col m4 s12 input-field")
+  form(class="w3-container")
+    div(class="w3-row-padding" )
+      div(class="w3-col m4 s12 ")
         label(for="username") Username
-        input(type="text" name="username" placeholder="Username" required="true" class="validate")
-      div(class="col m4 s12 input-field")
+        input(class="w3-input w3-light-grey " type="text" name="username" placeholder="Username" required="true")
+      div(class="w3-col m4 s12 ")
         label(for="password") Password
-        input(type="password" name="password" placeholder="Passwoes" required="true" class="validate")
-      div(class="col m4 s12 input-field")
+        input(class="w3-input w3-light-grey " type="password" name="password" placeholder="Password" required="true")
+      div(class="w3-col m4 s12 ")
         label(for="email") Email
-        input(type="email" name="email" placeholder="Email" required="true" class="validate")
-      div(class="row")
-        div(class="col m5 s12 input-field")
-          input(type="text" name="first_name" placeholder="First Name" class="validate")
+        input(class="w3-input w3-light-grey " type="email" name="email" placeholder="Email" required="true")
+      div(class="w3-row-padding")
+        div(class="w3-col m5 s12 ")
           label(for="first_name") First Name
-        div(class="col m5 s12 input-field")
+          input(class="w3-input w3-light-grey " type="text" name="first_name" placeholder="First Name")
+        div(class="w3-col m5 s12 ")
           label(for="last_name") Last Name
-          input(type="text" name="last_name" placeholder="Last Name" class="validate")
-        div(class="col m2 s12 input-field")
+          input(class="w3-input w3-light-grey " type="text" name="last_name" placeholder="Last Name")
+        div(class="w3-col m2 s12 ")
           label Age
-          input(type="text" name="age" placeholder="Age" class="validate")
-      div(class="row")
-        div(class="col m6 s12 input-field")
+          input(class="w3-input w3-light-grey " type="text" name="age" placeholder="Age")
+      div(class="w3-row-padding")
+        div(class="w3-col m6 s12 ")
           label(for="address") Address
-          input(type="text" name="address" placeholder="Address" class="validate")
-        div(class="col m3 s12 input-field")
+          input(class="w3-input w3-light-grey " type="text" name="address" placeholder="Address")
+        div(class="w3-col m3 s12 ")
           label(for="city") City
-          input(type="text" name="city" placeholder="City" class="validate")
-        div(class="col m1 s4 input-field")
+          input(class="w3-input w3-light-grey " type="text" name="city" placeholder="City" )
+        div(class="w3-col m1 s4 ")
           label(for="state") State
-          input(type="text" name="state" placeholder="State" class="validate")
+          input(class="w3-input w3-light-grey " type="text" name="state" placeholder="State" )
           span(class="grey-text") ex.MD
-        div(class="col m2 s8 input-field")
+        div(class="w3-col m2 s8 ")
           label(for="zip") Zip
-          input(type="text" name="zip" placeholder="Zip" class="validate")
-      div(class="row")
-        div(class="col m2 s12")
-          button(class="btn white grey-text" style="width: 100%") Login
-        div(class="col m7 s0")
+          input(class="w3-input w3-light-grey " type="text" name="zip" placeholder="Zip" )
+      div(class="w3-row-padding")
+        div(class="w3-col m2 s12")
+          a(href="/login"): button(type="button" class="w3-btn w3-light-grey white grey-text") Login
+        div(class="w3-col m7 s0")
         
         div(class="col m3 s12")
-          button(class="btn " style="width: 100%") Register
+          button(class="w3-btn w3-green w3-right") Register
