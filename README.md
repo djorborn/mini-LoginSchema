@@ -25,6 +25,9 @@ Simple form page for user to register new account.
 ## Login
 The login page will be a simple form with a post method pointing to `/login`.
 
+## Home Area
+A special place only ones with the key can get into.
+
 ## Dashboard
 Dashboard page loads current user information and lets the user update and save it.
 

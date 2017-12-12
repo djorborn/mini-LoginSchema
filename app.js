@@ -115,6 +115,7 @@ require('express')()
 })
 .listen(3000);
 // Functions \\
+
 //Login Functions
 function loginUser(req, res){
   User.find({'username': req.body.username}, function(err, data){
