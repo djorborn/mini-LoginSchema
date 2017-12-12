@@ -2,45 +2,47 @@ extends layout
 block register
   include header
   
-  form(class="w3-container")
+  form(class="w3-container" id="register_form" method="post")
     div(class="w3-row-padding" )
-      div(class="w3-col m4 s12 ")
+      div(class="w3-col m4 s12 " style="position: relative")
         label(for="username") Username
-        input(class="w3-input w3-light-grey " type="text" name="username" placeholder="Username" required="true")
+        input(class="w3-input w3-theme-l4 " type="text" name="username" placeholder="Username" required="true" onblur="if(this.value !== ''){checkUsernameAvailability(this.value);} else {availability_span.innerHTML = ''}")
+        span(id="availability_span")
       div(class="w3-col m4 s12 ")
         label(for="password") Password
-        input(class="w3-input w3-light-grey " type="password" name="password" placeholder="Password" required="true")
+        input(class="w3-input w3-theme-l4 " type="password" name="password" placeholder="Password" required="true")
       div(class="w3-col m4 s12 ")
         label(for="email") Email
-        input(class="w3-input w3-light-grey " type="email" name="email" placeholder="Email" required="true")
+        input(class="w3-input w3-theme-l4 " type="email" name="email" placeholder="Email" required="true")
       div(class="w3-row-padding")
         div(class="w3-col m5 s12 ")
           label(for="first_name") First Name
-          input(class="w3-input w3-light-grey " type="text" name="first_name" placeholder="First Name")
+          input(class="w3-input w3-theme-l4 " type="text" name="first_name" placeholder="First Name")
         div(class="w3-col m5 s12 ")
           label(for="last_name") Last Name
-          input(class="w3-input w3-light-grey " type="text" name="last_name" placeholder="Last Name")
+          input(class="w3-input w3-theme-l4 " type="text" name="last_name" placeholder="Last Name")
         div(class="w3-col m2 s12 ")
           label Age
-          input(class="w3-input w3-light-grey " type="text" name="age" placeholder="Age")
+          input(class="w3-input w3-theme-l4 " type="text" name="age" placeholder="Age")
       div(class="w3-row-padding")
         div(class="w3-col m6 s12 ")
           label(for="address") Address
-          input(class="w3-input w3-light-grey " type="text" name="address" placeholder="Address")
+          input(class="w3-input w3-theme-l4 " type="text" name="address" placeholder="Address")
         div(class="w3-col m3 s12 ")
           label(for="city") City
-          input(class="w3-input w3-light-grey " type="text" name="city" placeholder="City" )
+          input(class="w3-input w3-theme-l4 " type="text" name="city" placeholder="City" )
         div(class="w3-col m1 s4 ")
           label(for="state") State
-          input(class="w3-input w3-light-grey " type="text" name="state" placeholder="State" )
+          input(class="w3-input w3-theme-l4 " type="text" name="state" placeholder="State" )
           span(class="grey-text") ex.MD
         div(class="w3-col m2 s8 ")
           label(for="zip") Zip
-          input(class="w3-input w3-light-grey " type="text" name="zip" placeholder="Zip" )
+          input(class="w3-input w3-theme-l4 " type="text" name="zip" placeholder="Zip" )
       div(class="w3-row-padding")
         div(class="w3-col m2 s12")
-          a(href="/login"): button(type="button" class="w3-btn w3-light-grey white grey-text") Login
+          a(href="/login"): button(type="button" class="w3-btn w3-theme-l4 white grey-text") Login
         div(class="w3-col m7 s0")
         
         div(class="col m3 s12")
-          button(class="w3-btn w3-green w3-right") Register
+          button(class="w3-btn w3-theme-action w3-right") Register
+  h3(style="color: red")=msg

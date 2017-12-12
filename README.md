@@ -11,11 +11,13 @@ For this mini app, I want to use Mongoose to create a collection, insert, delete
 
 #### Tools
 I will be using express, pug, body-parser, cookie-parser and mongoose. I will use cookies to make a simple local session for the user.
-1. Express (Back-End-Framework)
+1. Express (Web-Framework)
 2. Pug (View Engine)
 3. Body-Parser (To read form inputs)
 4. Cookie-Parser (To control cookies! yummy!)
 5. Mongoose (To connect to mongodb)
+6. W3CSS (To Look Pretty)
+7. Jquery (For AJAX)
 
 ## Register
 Simple form page for user to register new account.

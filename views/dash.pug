@@ -1,0 +1,48 @@
+extends home
+block dash
+
+  form(class="w3-container" id="dashboard_form" method="post")
+    div(class="w3-row-padding" )
+      div(class="w3-col m4 s12 " style="position: relative")
+        label(for="username") Username
+        input(value=username class="w3-input w3-theme-d4 " type="text" name="username" placeholder="Username" required="true" disabled='true')
+        span(id="availability_span")
+      div(class="w3-col m4 s12 ")
+        label(for="password") Password
+        input(value=password class="w3-input w3-theme-l4 " type="password" name="password" placeholder="Password" required="true")
+      div(class="w3-col m4 s12 ")
+        label(for="email") Email
+        input(value=email class="w3-input w3-theme-l4 " type="email" name="email" placeholder="Email" required="true")
+      div(class="w3-row-padding")
+        div(class="w3-col m5 s12 ")
+          label(for="first_name") First Name
+          input(value=first_name class="w3-input w3-theme-l4 " type="text" name="first_name" placeholder="First Name")
+        div(class="w3-col m5 s12 ")
+          label(for="last_name") Last Name
+          input(value=last_name class="w3-input w3-theme-l4 " type="text" name="last_name" placeholder="Last Name")
+        div(class="w3-col m2 s12 ")
+          label Age
+          input(value=age class="w3-input w3-theme-l4 " type="text" name="age" placeholder="Age")
+      div(class="w3-row-padding")
+        div(class="w3-col m6 s12 ")
+          label(for="address") Address
+          input(value=address class="w3-input w3-theme-l4 " type="text" name="address" placeholder="Address")
+        div(class="w3-col m3 s12 ")
+          label(for="city") City
+          input(value=city class="w3-input w3-theme-l4 " type="text" name="city" placeholder="City" )
+        div(class="w3-col m1 s4 ")
+          label(for="state") State
+          input(value=state class="w3-input w3-theme-l4 " type="text" name="state" placeholder="State" )
+          span(class="grey-text") ex.MD
+        div(class="w3-col m2 s8 ")
+          label(for="zip") Zip
+          input(value=zip class="w3-input w3-theme-l4 " type="text" name="zip" placeholder="Zip" )
+      div(class="w3-row-padding")
+        
+        div(class="col m3 s12")
+          button(class="w3-btn w3-theme-action w3-right") Update
+  h3(style="color: red")=msg
+  fieldset(style="color:red; margin: auto; width: 300px" class="w3-theme-l4 w3-center")
+    legend(class="w3-red") Danger
+    h5 Delete Account
+    button(class="w3-btn w3-red" onclick="deleteAccount()") Delete Account

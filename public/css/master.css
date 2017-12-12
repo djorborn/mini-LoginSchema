@@ -1,1 +1,83 @@
 @import "w3.css";
+
+.valid {
+  color: green;
+}
+.invalid {
+  color: red;
+}
+#availability_span {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: ;
+    top: 20px;
+    right: 0;
+    font-size: 30px;
+}
+
+.w3-theme-l5 {color:#000 !important; background-color:#f0feff !important}
+.w3-theme-l4 {color:#000 !important; background-color:#ccfbff !important}
+.w3-theme-l3 {color:#000 !important; background-color:#99f6ff !important}
+.w3-theme-l2 {color:#000 !important; background-color:#66f2ff !important}
+.w3-theme-l1 {color:#000 !important; background-color:#33eeff !important}
+.w3-theme-d1 {color:#fff !important; background-color:#00d2e6 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#00bbcc !important}
+.w3-theme-d3 {color:#fff !important; background-color:#00a4b3 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#008c99 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#007580 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#f0feff !important}
+.w3-theme-dark {color:#fff !important; background-color:#007580 !important}
+.w3-theme-action {color:#fff !important; background-color:#007580 !important}
+
+.w3-theme {color:#000 !important; background-color:#00eaff !important}
+.w3-text-theme {color:#00eaff !important}
+.w3-border-theme {border-color:#00eaff !important}
+
+.w3-hover-theme:hover {color:#000 !important; background-color:#00eaff !important}
+.w3-hover-text-theme {color:#00eaff !important}
+.w3-hover-border-theme:hover {border-color:#00eaff !important}
+
+
+/* Tool Tip Stuff */
+
+.tooltip {
+  position: relative;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  opacity: 0;
+  font-size: 12px;
+  position: absolute;
+  width: 150px;
+  background-color: #333;
+  color: #aaa;
+  text-align: center;
+  padding: 5px;
+  transition: 1s;
+  border-radius: 7px;
+  margin-left: -50px;
+  bottom: 90%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+/* Brand */
+.brand {
+  cursor: pointer;
+  font-weight: 100;
+  text-decoration: overline;
+}

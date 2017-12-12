@@ -1,9 +1,18 @@
 extends layout
 block login
   include header
-  div(class="w3-container")
-    label() Username
-    input(type="text" name="username" placeholder="Username" class="w3-input")
-    
-    label() Password
-    input(type="password" name="password" placeholder="Password" class="w3-input")
+  form(method="POST")
+    div(class="w3-row-padding")
+      div(class=" w3-col m6 s12")
+        label() Username
+        input(type="text" name="username" placeholder="Username" class="w3-input")
+    div(class="w3-row-padding")
+      div(class=" w3-col m6 s12")
+        label() Password
+        input(type="password" name="password" placeholder="Password" class="w3-input")
+    div(class="w3-row-padding")
+      div(class="w3-col m6 s12")
+        a(href="/register"): button(type="button" class="w3-btn") Register
+        button(type="submit" class="w3-btn w3-theme-action w3-right") Login
+  
+  h3(style="color: red")=msg

@@ -1,3 +1,10 @@
 extends layout 
 block home
-  h1 Home
+  nav(class="w3-bar w3-theme w3-xlarge")
+    a(class="brand w3-bar-item") LoginSchema
+    a(class="w3-button w3-bar-item" href="/") Home
+    a(class="w3-button w3-bar-item" href="/dashboard") Dashboard
+    a(class="w3-button w3-bar-item" href="/logout") Logout
+    
+  block dash
+  block main
